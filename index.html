@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?
+  family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body style="background: radial-gradient(#ece9e9,rgb(34, 146, 97));
+">
+  <div class="container">
+    <!-- <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src=" images/logo.png" width="130px"></a> -->
+    <!-- </div>  -->
+    <div class="nav-search border">
+      <input class="search-bar" type="search" placeholder="Search Image Gallery">
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <nav class="nav-1">
+      <div class="gallery">
+        <div class="filter-buttons">
+          <button class="filter-button" data-filter="all">All</button>
+          <button class="filter-button" data-filter="nature">Nature</button>
+          <button class="filter-button" data-filter="birds">Birds</button>
+          <button class="filter-button" data-filter="animals">Animals</button>
+        </div>
+    </nav>
+  </div>
+  </div>
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>All IMAGES</h2>
+      <select>
+        <option>Default by Shorting</option>
+        <option>Short by price </option>
+        <option>Short by popularity</option>
+        <option>Short by rating</option>
+        <option>Short by sale</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-4" data-category="nature">
+        <img src="images/product-1.jpg">
+        <h4>Mountain Scenario</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$50.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+      </div>
+      <div class="col-4" data-category="nature">
+        <img src="images/product-2.jpg">
+        <h4>Sea shore</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$45.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+      </div>
+      <div class="col-4" data-category="nature">
+        <img src="images/product-3.jpg">
+        <h4>Winter Snow</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$60.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="nature">
+        <img src="images/product-4.jpg">
+        <h4>Green side Road</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$35.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="birds">
+        <img src="images/product-8.jpg">
+        <h4>Sparrow</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$150.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="birds">
+        <img src="images/product-9.jpg">
+        <h4>Blue KingFisher</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$550.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="birds">
+        <img src="images/product-10.jpg">
+        <h4>Parrots</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$38.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="animals">
+        <img src="images/product-11.jpg">
+        <h4>White Dove</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$90.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="animals">
+        <img src="images/product-12.jpg">
+        <h4>Black Buffalo</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$76.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="animals">
+        <img src="images/product-5.jpg">
+        <h4>Yellow Deer</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$50.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="animals">
+        <img src="images/product-6.jpg">
+        <h4>Blue Whale</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$45.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+      <div class="col-4" data-category="birds">
+        <img src="images/product-7.jpg">
+        <h4>An Eagle</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>$14.00</p>
+        <div class="filter-button remove-btn">Remove</div>
+
+      </div>
+    </div>
+    <div class="upload-image">
+      <input type="file" id="file-input" style="display: none;" accept="image/*">
+      <button id="upload-button">Upload Image</button>
+      <div id="image-preview-container">
+        <!-- Uploaded image will be displayed here -->
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Trigger the file input when the "Upload Image" button is clicked
+          $('#upload-button').click(function () {
+            $('#file-input').click(); // Trigger the file input
+          });
+
+          // Handle the file input change event (when the user selects a file)
+          $('#file-input').change(function (event) {
+            var file = event.target.files[0]; // Get the selected file
+            if (file) {
+              var reader = new FileReader(); // Create a FileReader instance
+
+              // When the file is loaded, set the image source to the file's data URL
+              reader.onload = function (e) {
+                var imagePreview = $('<img>').attr('src', e.target.result); // Create an image element
+                $('#image-preview-container').html(imagePreview); // Display the uploaded image
+              };
+
+              reader.readAsDataURL(file); // Read the file as a data URL
+            }
+          });
+        });
+      </script>
+    </div>
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
